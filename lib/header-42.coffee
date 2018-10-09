@@ -7,7 +7,7 @@ moment = require 'moment'
 
 String::rstrip = -> @replace /\s+$/g, ""
 
-module.exports = Header42 =
+module.exports = Header19 =
   config:
     login:
       type: 'string'
@@ -29,7 +29,7 @@ module.exports = Header42 =
     # with a CompositeDisposable
     @subscriptions = new CompositeDisposable
 
-    @subscriptions.add atom.config.observe 'header-42.login', (login) =>
+    @subscriptions.add atom.config.observe 'header-19.login', (login) =>
       @login = login
 
     atom.workspace.observeTextEditors (editor) =>
@@ -37,7 +37,7 @@ module.exports = Header42 =
 
     # Register command that toggles this view
     @subscriptions.add atom.commands.add 'atom-workspace',
-      'header-42:insert': => @insert()
+      'header-19:insert': => @insert()
 
   deactivate: ->
     @subscriptions.dispose()
