@@ -1,7 +1,7 @@
 {
   "name": "header-19",
   "main": "./lib/header-42",
-  "version": "3.4.0",
+  "version": "3.4.1",
   "description": "Add the 19 header to your project files",
   "keywords": [
     "19",
